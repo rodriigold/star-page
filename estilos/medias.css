@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+:root
+{
+    --cor1: #171717;
+    --cor2: #2D2E30;
+    --cor3: #393F52;
+    --cor4: #636363;
+    --cor5: #B0B0B0;
+}
+
+@media screen and (min-width:768px)
+{
+    main
+    {
+        max-width: 700px;
+    }
+
+    #menuicon
+    {
+        display: none;
+    }
+
+    header menu
+    {
+        display: block;
+        width: max-content;
+    }
+
+    menu ul
+    {
+        flex-direction: row;
+    }
+
+    menu a
+    {
+        padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    menu a
+    {
+        font-size: 1.15em;
+    }
+}
