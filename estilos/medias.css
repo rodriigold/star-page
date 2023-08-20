@@ -1,0 +1,136 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 768px)
+{
+
+    #art
+    {
+        position: relative;
+        background-color: black;
+    }
+
+    #menuicon, #miBorder
+    {
+        display: none;
+    }
+
+    menu
+    {
+        display: block;
+
+        border: 1px solid white;
+        background-color: #000000d2;
+        box-shadow: 0px 0px 12.5px 1px rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+
+        margin-top: 10px;
+        padding: 0px 5px;
+        width: 60%;
+    }
+
+    menu ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    menu li
+    {
+        padding: 5px 15px;
+    }
+
+    /* ============================================================ */
+
+    #container
+    {
+        width: 70%;
+    }
+
+    section
+    {
+        margin: 75px;
+    }
+
+    section img
+    {
+        max-height: 350px;
+    }
+
+    section p 
+    {
+        max-width: 500px;
+        padding: 15px;
+        font-size: 1.15rem;
+        line-height: 1.85rem;
+    }
+}
+
+@media screen and (min-width: 992px)
+{
+    #menuicon, #miBorder
+    {
+        display: none;
+    }
+
+    #art
+    {
+        position: relative;
+        background-color: black;
+    }
+
+    menu
+    {
+        display: block;
+
+        border: 1px solid white;
+        background-color: #000000d2;
+        box-shadow: 0px 0px 12.5px 1px rgba(255, 255, 255, 0.3);
+        border-radius: 20px;
+
+        margin-top: 10px;
+        padding: 0px 5px;
+        width: 60%;
+    }
+
+    menu ul
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    menu li
+    {
+        padding: 5px 15px;
+    }
+
+    /* ============================================================ */
+
+    #container
+    {
+        width: 80%;
+    }
+
+    section
+    {
+        margin: 75px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    section img
+    {
+        max-height: 350px;
+    }
+
+    section p 
+    {
+        max-width: 500px;
+        padding: 15px;
+        font-size: 1.15rem;
+        line-height: 1.85rem;
+    }
+}

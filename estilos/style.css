@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
 
 *
 {
@@ -12,11 +13,12 @@
 html
 {
     width: 100%;
+    background-image: linear-gradient(to bottom, black, rgb(0, 0, 7) 80%);
 }
 
 body
 {
-    background-color: #000000;
+    background-image: url(../imagens/stars-bg.png);
 }
 
 header
@@ -38,12 +40,30 @@ header
 
 #menuicon
 {
+    z-index: 1;
     font-size: 2.5em;
-    color: #b4b4b4;
+    color: #ffffff;
 
     width: 100%;
     text-align: center;
     margin-top: 450px;
+}
+
+#miBorder
+{
+    pointer-events: none;
+
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -95%);
+
+    border: 2px solid white;
+    border-radius: 20px;
+    box-shadow: 0px 0px 12.5px 1px rgba(255, 255, 255, 0.3);
+
+    width: 100px;
+    height: 50px;
+    
 }
 
 #menuicon:hover
@@ -57,7 +77,7 @@ menu
 
     margin: auto;
 
-    width: 35%;
+    width: 40%;
     padding: 10px;
 }
 
@@ -71,7 +91,7 @@ li
 {
     padding: 10px;
     margin: 10px;
-    color: #b4b4b4;
+    color: #ffffff;
 }
 
 li:hover
@@ -81,17 +101,28 @@ li:hover
 
 /* ============================================================ */
 
+#container
+{
+    width: 90%;
+    margin: auto;
+}
+
 section
 {
     display: flex;
     flex-direction: column;
-    border: 1px solid #bcbcbc5e;
-    border-radius: 10px;
+    background-color: #000000d2;
+    border: 2px solid #c9c9c9;
+    border-radius: 50px;
     margin: 50px;
-    padding: 20px;
+    padding: 25px;
+    box-shadow: 0px 0px 12.5px 1px rgba(255, 255, 255, 0.3);
 }
 
 section p
 {
-    text-align: center;
+    text-align: justify;
+    font-family: 'Handlee', sans-serif;
+    font-size: 1rem;
+    line-height: 1.25rem;
 }
