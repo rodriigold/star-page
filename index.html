@@ -18,7 +18,9 @@
 
         <div id="art"></div>
         <div id="menuicon" class="material-symbols-outlined" onclick="menuClick()">menu</div>
-        <div id="miBorder"></div>
+        <div id="miBorder">
+            <div id="insideicon" class="material-symbols-outlined" onclick="menuClick()">menu</div>
+        </div>
 
         <menu id="constellations">
             <ul>
@@ -93,17 +95,20 @@
             {
                 constellations.style.display = 'none'
                 menuicon.textContent = 'menu';
+                insideicon.textContent = 'menu';
             }
             else
             {
                 constellations.style.display = 'block'
                 menuicon.textContent = 'close';
+                insideicon.textContent = 'close';
             }
         }
 
         function changeSize() 
         {
             if(window.innerWidth >= 768) constellations.style.display = 'block'
+            else constellations.style.display = 'none'
         }
 
         function windowRoll(pos1, pos2)
@@ -111,6 +116,18 @@
             if(window.innerWidth >= 992) window.scrollTo(0, pos2)
             else window.scrollTo(0, pos1)
         }
+
+        menuicon.addEventListener('mousedown', function()
+        { 
+            miBorder.style.backgroundColor = '#ffffff'
+            insideicon.style.visibility = 'visible'
+        })
+
+        menuicon.addEventListener('mouseup', function()
+        { 
+            miBorder.style.backgroundColor = '#00000000';
+            insideicon.style.visibility = 'hidden'
+        })
 
     </script>
 

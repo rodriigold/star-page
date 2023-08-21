@@ -35,10 +35,19 @@
         justify-content: space-evenly;
     }
 
-    menu li
+    li
     {
-        padding: 5px 15px;
+        margin: 0;
+        padding: 15px;
     }
+
+    li:hover
+    {
+        background-color: #ffffff;
+        color: #000000;
+        transition-duration: 0.5s;
+    }
+
 
     /* ============================================================ */
 
@@ -89,8 +98,7 @@
         border-radius: 20px;
 
         margin-top: 10px;
-        padding: 0px 5px;
-        width: 60%;
+        width: 55%;
     }
 
     menu ul
@@ -100,9 +108,17 @@
         justify-content: space-evenly;
     }
 
-    menu li
+    li
     {
-        padding: 5px 15px;
+        margin: 0;
+        padding: 15px;
+    }
+
+    li:hover
+    {
+        background-color: #ffffff;
+        color: #000000;
+        transition-duration: 0.5s;
     }
 
     /* ============================================================ */
