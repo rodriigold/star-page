@@ -37,15 +37,13 @@
 
     li
     {
-        margin: 0;
-        padding: 15px;
+        padding: 5px 15px;
     }
 
     li:hover
     {
-        background-color: #ffffff;
-        color: #000000;
-        transition-duration: 0.5s;
+        transform: scale(110%);
+        transition-duration: 0.35s;
     }
 
 
@@ -110,15 +108,13 @@
 
     li
     {
-        margin: 0;
-        padding: 15px;
+        padding: 5px 15px;
     }
 
     li:hover
     {
-        background-color: #ffffff;
-        color: #000000;
-        transition-duration: 0.5s;
+        transform: scale(110%);
+        transition-duration: 0.35s;
     }
 
     /* ============================================================ */
