@@ -2,53 +2,6 @@
 
 @media screen and (min-width: 768px)
 {
-
-    #art
-    {
-        position: relative;
-        background-color: black;
-    }
-
-    #menuicon, #miBorder
-    {
-        display: none;
-    }
-
-    menu
-    {
-        display: block;
-
-        border: 1px solid white;
-        background-color: #000000d2;
-        box-shadow: 0px 0px 12.5px 1px rgba(255, 255, 255, 0.3);
-        border-radius: 20px;
-
-        margin-top: 10px;
-        padding: 0px 5px;
-        width: 60%;
-    }
-
-    menu ul
-    {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-
-    li
-    {
-        padding: 5px 15px;
-    }
-
-    li:hover
-    {
-        transform: scale(110%);
-        transition-duration: 0.35s;
-    }
-
-
-    /* ============================================================ */
-
     #container
     {
         width: 70%;
@@ -57,11 +10,6 @@
     section
     {
         margin: 75px;
-    }
-
-    section img
-    {
-        max-height: 350px;
     }
 
     section p 
@@ -96,7 +44,7 @@
         border-radius: 20px;
 
         margin-top: 10px;
-        width: 55%;
+        width: 60%;
     }
 
     menu ul
@@ -108,7 +56,7 @@
 
     li
     {
-        padding: 5px 15px;
+        padding: 5px 10px;
     }
 
     li:hover
@@ -121,7 +69,7 @@
 
     #container
     {
-        width: 80%;
+        width: 85%;
     }
 
     section

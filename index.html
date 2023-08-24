@@ -95,21 +95,34 @@
             if(constellations.style.display == 'block')
             {
                 constellations.style.display = 'none'
-                menuicon.textContent = 'menu';
-                insideicon.textContent = 'menu';
+                insideicon.textContent = 'menu'
+                menuicon.textContent = 'menu'
             }
             else
             {
                 constellations.style.display = 'block'
-                menuicon.textContent = 'close';
-                insideicon.textContent = 'close';
+                insideicon.textContent = 'close'
+                menuicon.textContent = 'close'
             }
         }
 
         function changeSize() 
         {
-            if(window.innerWidth >= 768) constellations.style.display = 'block'
+            if(window.innerWidth >= 992) constellations.style.display = 'block'
             else constellations.style.display = 'none'
+
+            switch(constellations.style.display)
+            {
+                case 'block':
+                    insideicon.textContent = 'close'
+                    menuicon.textContent = 'close'
+                    break
+
+                case 'none':
+                    insideicon.textContent = 'menu'
+                    menuicon.textContent = 'menu'
+                    break
+            }
         }
 
         function windowRoll(pos1, pos2)
