@@ -25,11 +25,11 @@
 
         <menu id="constellations">
             <ul>
-                <li onclick="windowRoll(750, 450)"> Cruzeiro do Sul </li>
-                <li onclick="windowRoll(1225, 925)"> Hydra </li>
-                <li onclick="windowRoll(1700, 1420)"> Lyra </li>
-                <li onclick="windowRoll(2215, 1885)"> Órion </li>
-                <li onclick="windowRoll(2700, 2500)"> Pegasus </li>
+                <li onclick="windowRoll('cru')"> Cruzeiro do Sul </li>
+                <li onclick="windowRoll('hyd')"> Hydra </li>
+                <li onclick="windowRoll('lyr')"> Lyra </li>
+                <li onclick="windowRoll('ori')"> Órion </li>
+                <li onclick="windowRoll('peg')"> Pegasus </li>
             </ul>
         </menu>
 
@@ -125,10 +125,10 @@
             }
         }
 
-        function windowRoll(pos1, pos2)
+        function windowRoll(index)
         {
-            if(window.innerWidth >= 992) window.scrollTo(0, pos2)
-            else window.scrollTo(0, pos1)
+            const target = document.getElementById(index);
+            if(target)  target.scrollIntoView()
         }
 
         menuicon.addEventListener('pointerdown', function()

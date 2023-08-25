@@ -89,7 +89,8 @@
 
     section img
     {
-        max-height: 350px;
+        max-width: 300px;
+        height: auto;
     }
 
     section p 
