@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@200" rel="stylesheet" />
@@ -11,98 +10,118 @@
 
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <title>Moon In River - Significado das Contelações</title>
-
 </head>
+
 <body onresize="changeSize()">
    
     <header>
-
         <div id="art"></div>
-        <div id="menuicon" class="material-symbols-outlined" onclick="menuClick()">menu</div>
-        <div id="miBorder">
-            <div id="insideicon" class="material-symbols-outlined" onclick="menuClick()">menu</div>
+        <div id="menuButtonArea">
+            <div id="menuicon" class="material-symbols-outlined" onclick="menuClick()">menu</div>
+            <div id="menuBorder"></div>
         </div>
 
         <menu id="constellations">
+            <div class="bar"></div>
             <ul>
-                <li onclick="windowRoll('cru')"> Cruzeiro do Sul </li>
-                <li onclick="windowRoll('hyd')"> Hydra </li>
-                <li onclick="windowRoll('lyr')"> Lyra </li>
-                <li onclick="windowRoll('ori')"> Órion </li>
-                <li onclick="windowRoll('peg')"> Pegasus </li>
+                <li class="navButton" onclick="windowRoll('cru')"> Cruzeiro do Sul </li>
+                <li class="navButton" onclick="windowRoll('hyd')"> Hydra </li>
+                <li class="navButton" onclick="windowRoll('lyr')"> Lyra </li>
+                <li class="navButton" onclick="windowRoll('ori')"> Órion </li>
+                <li class="navButton" onclick="windowRoll('peg')"> Pegasus </li>
             </ul>
         </menu>
-
     </header>
 
     <main>
-
         <div id="container">
-
             <section id="cru">
+                <div class="up">
+                    <p class="title">Cruzeiro do Sul</p>
+                    <div class="bar"></div>
+                </div>
 
-                <img src="imagens/cruzeiro-do-sul.png" alt="Cruzeiro do Sul" class="image">
-
-
-                <p>Essa constelação é um guia de orientação e um símbolo de identidade regional. Ela nos lembra da importância de encontrar nosso caminho e apreciar a beleza única do hemisfério sul, enquanto nos conecta às maravilhas do cosmos.</p>
-
+                <div class="down">
+                    <img src="imagens/cruzeiro-do-sul.png" alt="Cruzeiro do Sul" class="image">
+                    <p class="msg">Essa constelação é um guia de orientação e um símbolo de identidade regional. Ela nos lembra da importância de encontrar nosso caminho e apreciar a beleza única do hemisfério sul, enquanto nos conecta às maravilhas do cosmos.</p>
+                </div>
             </section>
 
 
             <section id="hyd">
+                <div class="up">
+                    <p class="title">Hydra</p>
+                    <div class="bar"></div>
+                </div>
 
-                <img src="imagens/hydra.png" alt="Hydra" class="image">
-
-                <p>Apesar de sua aparência serpentina, essa constelação pode ser vista como um símbolo de regeneração, renovação e fluidez. Ela nos lembra que, mesmo nas situações mais desafiadoras, sempre há oportunidade para recomeçar.</p>
-
+                <div class="down">
+                    <img src="imagens/hydra.png" alt="Hydra" class="image">
+                    <p class="msg">Apesar de sua aparência serpentina, essa constelação pode ser vista como um símbolo de regeneração, renovação e fluidez. Ela nos lembra que, mesmo nas situações mais desafiadoras, sempre há oportunidade para recomeçar.</p>
+                </div>
             </section>
 
 
             <section id="lyr">
+                <div class="up">
+                    <p class="title">Lyra</p>
+                    <div class="bar"></div>
+                </div>
 
-                <img src="imagens/lyra.png" alt="Lyra" class="image">
-
-                <p> Representando uma lira ou harpa, esta constelação é associada à música, à poesia e à criatividade. Lyra nos inspira a expressar nossas emoções e a encontrar beleza nas artes.</p>
-
+                <div class="down">
+                    <img src="imagens/lyra.png" alt="Lyra" class="image">
+                    <p class="msg"> Representando uma lira ou harpa, esta constelação é associada à música, à poesia e à criatividade. Lyra nos inspira a expressar nossas emoções e a encontrar beleza nas artes.</p>
+                </div>
             </section>
-
 
             <section id="ori">
+                <div class="up">
+                    <p class="title">Órion</p>
+                    <div class="bar"></div>
+                </div>
 
-                <img src="imagens/orion.png" alt="Órion" class="image">
-
-                <p>Representa o lendário caçador da mitologia grega, Orion. Suas estrelas brilhantes formam uma figura distintiva no céu e são frequentemente associadas à força, determinação, inspirando-nos a enfrentar desafios com resolução e buscar harmonia em nossas vidas.</p>
-
+                <div class="down">
+                    <img src="imagens/orion.png" alt="Órion" class="image">
+                    <p class="msg">Representa o lendário caçador da mitologia grega, Orion. Suas estrelas brilhantes formam uma figura distintiva no céu e são frequentemente associadas à força, determinação, inspirando-nos a enfrentar desafios com resolução e buscar harmonia em nossas vidas.</p>
+                </div>
             </section>
-
 
             <section id="peg">
-
-                <img src="imagens/pegasus.png" alt="Pégasus" class="image">
-
-                <p>A constelação do cavalo alado da mitologia grega evoca a imaginação e a liberdade. É um símbolo de criatividade e sonhos, lembrando-nos de nossa capacidade de imaginar e voar acima de obstáculos.</p>
-
+                <div class="up">
+                    <p class="title">Pégasus</p>
+                    <div class="bar"></div>
+                </div>
+                
+                <div class="down">
+                    <img src="imagens/pegasus.png" alt="Pégasus" class="image">
+                    <p class="msg">A constelação do cavalo alado da mitologia grega evoca a imaginação e a liberdade. É um símbolo de criatividade e sonhos, lembrando-nos de nossa capacidade de imaginar e voar acima de obstáculos.</p>
+                </div>
             </section>
-
         </div>
-
     </main>
+
+    <footer>
+        <p>Site criado por <strong>rodrigo_ld</strong></p>
+        <a href="https://github.com/rodriigold" target="_blank"> <img src="imagens/github.png" alt="Github Logo" class="footerLogo" > </a>
+        <a href="http://instagram.com/rodriigo_ld/" target="_blank"> <img src="imagens/insta.png" alt="Insta Logo" class="footerLogo"> </a>
+    </footer>
 
     <script>
 
         function menuClick() 
-        {
+        {        
             if(constellations.style.display == 'block')
             {
                 constellations.style.display = 'none'
-                insideicon.textContent = 'menu'
                 menuicon.textContent = 'menu'
+                menuBorder.style.width = "100px";
+                menuBorder.style.height = "75px";
             }
             else
             {
                 constellations.style.display = 'block'
-                insideicon.textContent = 'close'
                 menuicon.textContent = 'close'
+                menuBorder.style.width = "82%";
+                menuBorder.style.height = "350px";
             }
         }
 
@@ -128,20 +147,8 @@
         function windowRoll(index)
         {
             const target = document.getElementById(index);
-            if(target)  target.scrollIntoView()
+            if(target)  target.scrollIntoView(target)
         }
-
-        menuicon.addEventListener('pointerdown', function()
-        { 
-            miBorder.style.backgroundColor = '#ffffff'
-            insideicon.style.visibility = 'visible'
-        })
-
-        menuicon.addEventListener('pointerup', function()
-        { 
-            miBorder.style.backgroundColor = '#00000000';
-            insideicon.style.visibility = 'hidden'
-        })
 
     </script>
 

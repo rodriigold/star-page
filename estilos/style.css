@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('https://fonts.googleapis.com/css2?family=Handlee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
 
 *
 {
@@ -13,18 +14,20 @@
 html
 {
     width: 100%;
-    background-image: linear-gradient(to bottom, black, rgb(0, 0, 7) 80%);
 }
 
 body
 {
-    background-image: url(../imagens/stars-bg.png);
-    background-attachment: fixed;
+    background-image: linear-gradient(to bottom, #000000, #07010c);
 }
 
 header
 {
     min-height: 465px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #art
@@ -34,21 +37,29 @@ header
     background-position: top center;
     background-repeat: no-repeat;
 
-    position: absolute;
-    height: 445px;
+    height: 400px;
     width: 100%;
+}
+
+#menuButtonArea
+{
+    width: 100%;
+    height: 75px;
+
+    display: flex;
+    justify-content: center;
 }
 
 #menuicon
 {
     font-size: 2.5em;
     color: #ffffff;
-    
 
-    width: 100%;
+    width: 100px;
     text-align: center;
-    margin-top: 450px;
+    align-content: center;
 
+    z-index: 1;
     cursor: pointer;
 }
 
@@ -57,34 +68,23 @@ header
     cursor: pointer;
 }
 
-#miBorder
+#menuBorder
 {
     pointer-events: none;
     position: absolute;
-    left: 50%;
-    transform: translate(-50%, -95%);
-
-    border: 2px solid #ffffff;
-    border-radius: 20px;
-    box-shadow: 0px 0px 12.5px 1px #ffffff4d;
-
     width: 100px;
-    height: 50px;
-    
+    height: 75px;
+
+    border: 1px solid #ffffff52;
+    background-image: linear-gradient(45deg, #ffffff0e, #ffffff04);
+    border-radius: 8px;
 }
 
-#insideicon
+.navButton
 {
-    visibility: hidden;
-    color: #000000;
-    font-size: 2.5em;
-    width: 100%;
-    text-align: center;
-}
-
-#menuicon::selection, #miBorder::selection, #insideicon::selection
-{
-    background-color: #00000000;
+    font-family: "Inter", sans-serif;
+    cursor: pointer;
+    z-index: 1;
 }
 
 menu
@@ -93,8 +93,14 @@ menu
 
     margin: auto;
 
-    width: 40%;
+    width: 90%;
     padding: 10px;
+}
+
+menu > .bar
+{
+    margin: auto;
+    order: 0;
 }
 
 menu ul
@@ -108,6 +114,12 @@ li
     padding: 10px;
     margin: 10px;
     color: #ffffff;
+}
+
+li:active
+{
+    background-image: linear-gradient(to right, #ffffff00, #ffffff34, #ffffff00);
+    transition-duration: 0.5s;
 }
 
 li:hover
@@ -128,24 +140,71 @@ section
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #000000d2;
-    border: 2px solid #c9c9c9;
-    border-radius: 50px;
-    margin: 50px;
-    padding: 25px;
-    box-shadow: 0px 0px 12.5px 1px rgba(255, 255, 255, 0.3);
+    margin: 32px 32px 56px 32px;
+    padding: 25px 0;
 }
 
 section img
 {
-    width: 80%;
-    height: auto;
+    width: 100%;
 }
 
-section p
+.up, .down
 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+}
+
+.title
+{
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.bar
+{
+    width: 70%;
+    height: 1px;
+    background-image: linear-gradient(to right, #ffffff00, #ffffff, #ffffff00);
+}
+
+.msg
+{
+    margin-top: -32px;
     text-align: justify;
-    font-family: 'Handlee', sans-serif;
-    font-size: 1rem;
+    font-family: "Josefin Sans", sans-serif;
+    font-weight: 300;
+    font-size: 0.9rem;
     line-height: 1.25rem;
+}
+
+/* ============================================================ */
+
+footer
+{
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+footer > p
+{
+    font-family: "Inter", sans-serif;
+    font-size: 0.75rem;
+    font-weight: 200;
+}
+
+.footerLogo
+{
+    margin-left: 15px;
+    width: 30px;
+    height: 30px;
 }
