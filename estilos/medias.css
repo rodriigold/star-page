@@ -161,8 +161,8 @@
     {
         width: 100%;
         margin-bottom: 12px;
-        -webkit-mask: radial-gradient(circle, transparent 25%, #000000 26%);
-        mask: radial-gradient(circle, transparent 25%, #000000 26%);
+        -webkit-mask: radial-gradient(circle, transparent 30%, #000000 31%);
+        mask: radial-gradient(circle, transparent 30%, #000000 31%);
     }
 
     .down

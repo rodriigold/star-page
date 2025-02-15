@@ -76,8 +76,14 @@ header
     height: 75px;
 
     border: 1px solid #ffffff52;
-    background-image: linear-gradient(45deg, #ffffff0e, #ffffff04);
+    background-image: linear-gradient(45deg, #ffffff1c, #ffffff11);
     border-radius: 8px;
+}
+
+#menuBorder.opened
+{
+    width: 85%;
+    height: 350px;
 }
 
 .navButton
@@ -95,6 +101,11 @@ menu
 
     width: 90%;
     padding: 10px;
+}
+
+menu.opened
+{
+    display: block;
 }
 
 menu > .bar
